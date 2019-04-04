@@ -8,6 +8,7 @@ import com.example.daggerex.data.SharedPrefsHelper;
 import com.example.daggerex.data.model.User;
 import com.example.daggerex.di.ApplicationContext;
 
+import javax.inject.Inject;
 import javax.inject.Singleton;
 
 @Singleton
@@ -16,6 +17,7 @@ public class DataManager {
     private DbHelper mDbHelper;
     private SharedPrefsHelper mSharedPrefsHelper;
 
+    @Inject
     public DataManager(@ApplicationContext Context context, DbHelper dbHelper, SharedPrefsHelper sharedPrefsHelper) {
         mContext = context;
         mDbHelper = dbHelper;

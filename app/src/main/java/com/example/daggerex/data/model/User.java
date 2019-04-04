@@ -8,6 +8,9 @@ public class User {
     private String createdAt;
     private String updatedAt;
 
+    public User() {
+    }
+
     public User(String name, String address) {
         this.name = name;
         this.address = address;
@@ -51,5 +54,16 @@ public class User {
 
     public void setUpdatedAt(String updatedAt) {
         this.updatedAt = updatedAt;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", createdAt='" + createdAt + '\'' +
+                ", updatedAt='" + updatedAt + '\'' +
+                '}';
     }
 }

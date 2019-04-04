@@ -5,6 +5,7 @@ import android.content.Context;
 
 import com.example.daggerex.data.DataManager;
 import com.example.daggerex.di.component.ApplicationComponent;
+import com.example.daggerex.di.component.DaggerApplicationComponent;
 import com.example.daggerex.di.module.ApplicationModule;
 
 import javax.inject.Inject;
